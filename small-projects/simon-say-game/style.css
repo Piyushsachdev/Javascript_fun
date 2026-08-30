@@ -1,0 +1,43 @@
+body{
+    text-align: center;
+}
+h3{
+    text-align: left;
+    
+}
+.btn-Container{
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+}
+
+.btn{
+    border: 20px solid black;
+    width: 200px;
+    height: 200px;
+    border-radius: 80px;
+    margin: 30px;
+
+}
+/* here it means select the element which has both class which lead to more spacificity */
+/* .btn.flash{ 
+    background-color: white;
+} */
+.yellow{
+    background-color: yellow;
+}
+.red{
+    background-color: red;
+}
+.green{
+    background-color: green;
+}
+.orange{
+    background-color: orange;
+}
+.flash{
+    background-color: white;
+}
+.userF{
+    background-color: black;
+}

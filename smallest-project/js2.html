@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <Meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function check(btnid)
+        {
+            // alert(btnid) ==0 left,1==middle,2==right,34
+            if (btnid==0)
+            {
+                document.getElementById("mymouse").innerHTML="left mouse butten is clicked"
+                document.getElementById("mymouse").style.color ="green"
+            }
+            if (btnid==1)
+            {
+                document.getElementById("mymouse").innerHTML="middle mouse butten is clicked"
+                document.getElementById("mymouse").style.color = "blue"
+            }
+            if (btnid==2)
+            {
+                document.getElementById("mymouse").innerHTML="right mouse butten is clicked"
+                document.getElementById("mymouse").style.color = "red"
+            }
+        }
+    </script>
+</head>
+<body>
+    <div style="color:crimson;font-size: 50px;" id="mymouse">
+        which butten is clicked?
+    </div>
+    <br><br><br>
+    <div style="color: green; font-size:30px;" onmousedown=check(event.button)>
+        click here
+    </div>
+</body>
+</html>
